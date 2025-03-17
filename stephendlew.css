@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Rosario';
+	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-Bold.otf');
+	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-BoldItalic.otf');
+	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-Italic.otf');
+	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-Regular.otf');
+}
+
+@font-face {
+	font-family: 'MerriweatherSans';
+	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-Bold.otf');
+	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-BoldItalic.otf');
+	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-Italic.otf');
+	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-Regular.otf');
+}
+
+html, body {
+font-family: 'MerriweatherSans', helvetica, arial, san-serif;
+font-size:1em;
+background-color: #e7ecfb;
+color:#000;
+margin: 0 auto;
+padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'MerriweatherSans', georgia, serif;
+font-size:65px;
+color:#999;
+font-weight:bold;
+letter-spacing:.1em;
+}
+
+h1 {color:#999999; float:left;} 
+h2 {font-size:30px; margin-left:30px;} 
+h3 {font-size:24px; color:#333;} 
+h4 {color:#cc3333; font-size:20px; position:relative; top:-30px;} 
+h5 {font-size:16px; color:#666666; clear: both;} 
+h6 {font-size:14px; color:#FF0033; position: relative; top:60px; vertical-align:bottom; padding: 0 0 0 50px;float:left;}
+
+#container {
+width: 70%;
+clear:both;
+margin: 0 auto;
+padding-top:200px;
+}
+
+a .indeximg {
+background-color:#00FF33;
+width:200px;
+max-height:160px;
+height:auto;
+margin:5px;
+box-shadow: 0px 5px 10px 3px #999;
+}
+
+.indeximg:hover {
+transition: opacity .5s ease-in-out;
+filter:alpha(opacity=50);
+-moz-opacity: 0.5; 
+opacity: 0.5;
+-khtml-opacity: 0.5;
+}
+
+
+
+#textbox {
+width:200px;
+height: 400px;
+padding: 0 10px;
+float:left;
+font-size:.9em;
+text-align:justified;
+color:#333;
+overflow: auto;
+}
+
+#textboxclear {
+margin: 0 auto;
+margin-top:200px;
+margin-bottom: 500px;
+clear:both;
+font-size:.8em;
+min-height: 100%;
+width: 60%;
+padding:20px;
+padding-top: 80px;
+text-align:justify;
+color:#333;
+overflow:auto;
+}
+
+#textboxclear img {
+margin-left:30%;
+}
+
+.fixedbuttons {
+position: fixed;
+left: 80%;
+top:30%;
+font-size: .9em;
+height: 2em;
+width: 100px;
+opacity:0.3;
+z-index: 3;
+display:none;
+}
+
+.fixedbuttons:hover {
+	opacity:0.7;
+	transition: opacity .5s ease-in-out;
+}
+
+.fixedbuttons:hover:after {
+	content:"top";
+	margin-left:38px;
+
+}
+
+a#fixedbuttons {
+font-size: inherit;
+font-weight: normal;
+
+}
+
+#buttoncontainer {
+margin-left:220px;
+width:50%;
+}
+
+#contactform {
+margin:1000px 0px;
+text-align: center;
+padding-top:20px;
+}
+
+input, textarea {
+width:450px;
+height:27px;
+background:#efefef;
+border:1px solid #dedede;
+padding:10px;
+margin-top:10px;
+margin-bottom:30px;
+font-size:inherit;
+color:#3a3a3a;
+clear:both;
+box-shadow: 0px 5px 10px 3px #999;
+}
+
+textarea {
+height:200px;
+}
+
+input:focus, textarea:focus {
+border:1px solid #97d6eb;
+}
+
+#submit {
+width:127px;
+height:38px;
+border:none;
+margin-top:20px;
+cursor:pointer;
+opacity: 0.7;
+}
+
+#submit:hover {
+	    opacity:1.0;
+	}
+
+a, a:visited {
+color:inherit;
+font-weight:bold;
+text-decoration: none;
+}
+
+a:after {
+content: attr(title);
+color: #333;
+display: block;
+font-family: 'MerriweatherSans', helvetica, arial, san-serif;
+font-weight: bold;
+font-size:3.3em;
+height: 30px;
+line-height: 30px;
+position: absolute;
+left:-35%;
+top:9%;
+text-align: center;
+width: 100%;
+opacity: 0.1;
+transition: opacity .5s ease-in-out;
+}
+
+a:hover:after {
+content: attr(title);
+color: #333;
+display: block;
+font-family: 'MerriweatherSans', helvetica, arial, san-serif;
+font-weight: bold;
+font-size:3.3em;
+height: 30px;
+line-height: 30px;
+position: absolute;
+left:-35%;
+top:9%;
+text-align: center;
+width: 100%;
+opacity: .9;
+
+}
+
+.webdesign a:hover:after {
+content:;
+display:none;
+}
+
+.indexheaderimg{
+	position: absolute;
+	top:7%;
+	height: 100px;
+	width: 100%;
+	opacity: .6;
+	left:5%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
+/* define mobile specific styles  */
+
+	html, body {
+	font-size: 1.5em;
+	}
+
+	#textbox {
+	margin:0 auto;
+	left:0px;
+	top:0px;
+	width:100%;
+	height: 100%;
+	padding: 0 10px;
+	position:relative;
+	font-size:inherit;
+	text-align:justified;
+	color:#333;
+	overflow: auto;
+	font-size: .7em;
+	}
+
+	#container {
+	padding-top: 20px;
+	width:70%;
+	}
+
+	a:hover:after {
+	display:none;
+	}
+
+	a:after {
+	display: none;
+	}
+
+	#textboxclear {
+	font-size:inherit;
+	min-height: 100%;
+	width: 100%;
+	padding:0px;
+	font-size: .7em;
+	}
+
+	#textboxclear img {
+	margin-left:10%;
+	width:70%;
+	height:70%;
+	}
+
+	.fixedbuttons {
+	left: 85%;
+	top:80%;
+
+	}
+
+	.fixedbuttons:hover:after {
+
+		display:none;
+
+	}
+
+	#buttoncontainer {
+	clear:both;
+	margin:0 auto;
+	}
+
+	.indexheaderimg{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width: 1024px) {
+/* define mobile specific styles  */
+
+	html, body {
+	font-size: 1.5em;
+	}
+
+	#textbox {
+	margin:0 auto;
+	left:0px;
+	top:0px;
+	width:100%;
+	height: 100%;
+	padding: 0 10px;
+	position:relative;
+	font-size:inherit;
+	text-align:justified;
+	color:#333;
+	overflow: auto;
+	font-size: .7em;
+	}
+
+	#container {
+	padding-top: 20px;
+	width:70%;
+	}
+
+	a:hover:after {
+	display:none;
+	}
+
+	a:after {
+	display: none;
+	}
+
+	#textboxclear {
+	font-size:inherit;
+	min-height: 100%;
+	width: 100%;
+	padding:0px;
+	font-size: .7em;
+	}
+
+	#textboxclear img {
+	margin-left:10%;
+	width:70%;
+	height:70%;
+	}
+
+	.fixedbuttons {
+	left: 80%;
+	top:80%;
+
+	}
+
+	.fixedbuttons:hover:after {
+
+	display:none;
+
+	}
+
+	#buttoncontainer {
+	clear:both;
+	margin:0 auto;
+	}
+
+	.indexheaderimg{
+		display: none;
+	}
+}
