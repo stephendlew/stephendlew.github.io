@@ -1,22 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@font-face {
-	font-family: 'Rosario';
-	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-Bold.otf');
-	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-BoldItalic.otf');
-	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-Italic.otf');
-	src: url('http://www.robotmelon.com/stephendlew/fonts/Rosario-Regular.otf');
-}
-
-@font-face {
-	font-family: 'MerriweatherSans';
-	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-Bold.otf');
-	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-BoldItalic.otf');
-	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-Italic.otf');
-	src: url('http://www.robotmelon.com/stephendlew/fonts/MerriweatherSans-Regular.otf');
-}
-
 html, body {
 font-family: 'MerriweatherSans', helvetica, arial, san-serif;
 font-size:1em;
@@ -48,6 +32,23 @@ margin: 0 auto;
 padding-top:200px;
 }
 
+.rosario-gfont {
+	font-family: "Rosario", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+  }
+
+  .merriweather-sans-gfont {
+	font-family: "Merriweather Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+  }
+  Legacy browser support for variable fonts
+  Read our FAQ
+  
+
 a .indeximg {
 background-color:#00FF33;
 width:200px;
@@ -64,8 +65,6 @@ filter:alpha(opacity=50);
 opacity: 0.5;
 -khtml-opacity: 0.5;
 }
-
-
 
 #textbox {
 width:200px;
@@ -232,7 +231,7 @@ opacity: .9;
 }
 
 .webdesign a:hover:after {
-content:;
+content:normal;
 display:none;
 }
 
