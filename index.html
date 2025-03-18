@@ -4,8 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Stephen Lewis / Editor / Designer</title>
 <link href="/stephendlew.css" rel="stylesheet" type="text/css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="/javascript/smoothscroll.js"></script>
 </head>
 
 <body>
@@ -53,48 +51,6 @@
 		<a title="twitter" href="https://twitter.com/#!/stephendlew"><img src="/images/twitblock.gif" class="indeximg" alt="twitter"></a>
 	</div>
 
-<div id="contactform">
-	<h3>send me an email</h3>
-		<form method="post" action="contact.php">
-		        
-		    <label>Name</label><br/>
-		    <input name="name" id="name" placeholder="Type Here"><br/>
-		            
-		    <label>Email</label><br/>
-		    <input name="email" type="email" id="email" placeholder="Type Here"><br/>
-		            
-		    <label>Message</label><br/>
-		    <textarea name="message" id="message" placeholder="Type Here"></textarea><br/>
-
-		    <label>*What is 2+2? (Anti-spam)</label><br/>
-			<input name="human" placeholder="Type Here"><br/><br/>
-		            
-		    <input id="submit" name="submit" type="submit" value="Submit">
-
-		</form>
-
-	<script>
-
-
-	jQuery(document).ready(function() {
-	    var offset = 300;
-	    var duration = 400;
-	    jQuery(window).scroll(function() {
-	        if (jQuery(this).scrollTop() > offset) {
-	            jQuery('.fixedbuttons').fadeIn(duration);
-	        } else {
-	            jQuery('.fixedbuttons').fadeOut(duration);
-	        }
-	    });
-	    
-	    jQuery('.fixedbuttons').click(function(event) {
-	                  event.preventDefault();
-	        jQuery('html, body').animate({scrollTop: 0}, duration);
-	        return false;
-	    })
-	});
-
-	</script>
 
 </div>
 
