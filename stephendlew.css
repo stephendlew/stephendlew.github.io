@@ -92,10 +92,6 @@ color:#333;
 overflow:auto;
 }
 
-#textboxclear img {
-margin-left:30%;
-}
-
 .redacted span {
 	position: relative;
 	white-space: pre;
@@ -231,7 +227,7 @@ opacity: .9;
 }
 
 .webdesign a:hover:after {
-content:normal;
+content:none;
 display:none;
 }
 
