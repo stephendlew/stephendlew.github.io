@@ -97,7 +97,7 @@ overflow:auto;
 margin-left:30%;
 }
 
-.redacted span {
+.redacted {
 	position: relative;
 	white-space: pre;
 	&:after {
