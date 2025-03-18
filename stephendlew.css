@@ -11,7 +11,7 @@ padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'MerriweatherSans', georgia, serif;
+font-family: 'Rosario', georgia, serif;
 font-size:65px;
 color:#999;
 font-weight:bold;
@@ -35,14 +35,14 @@ padding-top:200px;
 .rosario-gfont {
 	font-family: "Rosario", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
+	font-weight: 400;
 	font-style: normal;
   }
 
   .merriweather-sans-gfont {
 	font-family: "Merriweather Sans", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
+	font-weight: 400;
 	font-style: normal;
   }
   Legacy browser support for variable fonts
