@@ -97,7 +97,7 @@ overflow:auto;
 margin-left:30%;
 }
 
-.redacted {
+.redacted span {
 	position: relative;
 	white-space: pre;
 	&:after {
@@ -110,7 +110,9 @@ margin-left:30%;
 	  left: 0;
 	  position: absolute;
 	  transform: skewY(-5deg) rotate(5deg);
+		}
 	}
+
 
 .fixedbuttons {
 position: fixed;
