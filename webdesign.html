@@ -7,7 +7,6 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap');
 	</style>
-	<script src="/javascript/scroller-cdn.min.js"></script>
 </head>
 
 <p id="top"></p>
@@ -98,26 +97,11 @@
 
 </div>
 
-<script>
-jQuery(document).ready(function() {
-    var offset = 300;
-    var duration = 400;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.fixedbuttons').fadeIn(duration);
-        } else {
-            jQuery('.fixedbuttons').fadeOut(duration);
-        }
-    });
-    
-    jQuery('.fixedbuttons').click(function(event) {
-                  event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
-});
-
-</script>
+<script type="module">
+	import Scroller from "/javacript/scroller-es6.min.js";
+	const myLinks = new Scroller({
+  });
+  </script>
 
 </body>
 </html>
