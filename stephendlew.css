@@ -31,8 +31,6 @@ width: 70%;
 clear:both;
 margin: 0 auto;
 padding-top:200px;
-background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-
 }
 
 .rosario-gfont {
@@ -94,6 +92,7 @@ font-size:.9em;
 text-align:justified;
 color:#333;
 overflow: auto;
+background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
 }
 
 #textboxclear {
