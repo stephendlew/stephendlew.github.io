@@ -46,7 +46,7 @@ h6 {font-size:14px; color:#FF0033; position: relative; top:60px; vertical-align:
 	filter: blur(8px);
 	width: calc(100% + 4px);
 	height: calc(150% + 4px);
-	animation: glowing 60s linear infinite;
+	animation: glowing 120s linear infinite;
 	opacity: .3;
 	transition: opacity .3s ease-in-out;
 	border-radius: 10px;
